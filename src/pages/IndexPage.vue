@@ -6,6 +6,14 @@
       @reset="onReset"
       class="q-gutter-md"
     >
+    <q-input
+        filled
+        v-model="id"
+        label="Your id *"
+        hint="id"
+        lazy-rules
+        :rules="[ val => val && val.length > 0 || 'id']"
+      />
       <q-input
         filled
         v-model="name"
