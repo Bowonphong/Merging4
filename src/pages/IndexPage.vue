@@ -64,12 +64,14 @@ export default {
 
     const name = ref("บวรพงศ์")
     const surname = ref("นาคสุข")
+    const language = ref("ภาษาไทย")
     const age = ref(null)
     const accept = ref(false)
 
     return {
       name,
       surname,
+      language,
       age,
       accept,
 
@@ -95,6 +97,7 @@ export default {
       onReset () {
         name.value = null
         surname.value = null
+        language.value = null
         age.value = null
         accept.value = false
       }
